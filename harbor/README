@@ -1,0 +1,21 @@
+
+
+# 先备份harbor
+修改欲备份harbor的ip、port
+
+sh harbor-backup.sh
+
+完了将 导出的tar包images.tar拷贝至备份目录
+
+
+# 恢复harbor 
+先将 tar包images.tar拷贝至能访问harbor的主机
+修改欲恢复的harbor的ip、port
+可以手动登陆镜像仓库，然后将代码中登陆部分注释掉。
+
+sh harbor-restore.sh 
+
+
+
+
+
